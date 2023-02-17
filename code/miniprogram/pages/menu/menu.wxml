@@ -1,0 +1,10 @@
+<!--pages/menu/menu.wxml-->
+<!-- <text>pages/menu/menu.wxml</text> -->
+<view class="menuContainer">
+  <!-- <view class="menuTitle">{{type}}</view> -->
+  <view wx:for="{{menulist}}" wx:for-item="item" class="menu">
+    <navigator url="../dishDetail/dishDetail?dishName={{item.name}}">
+      <dishItem item="{{item}}"/>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<!--component/dishItem/dishItem.wxml-->
+<!-- <text>component/dishItem/dishItem.wxml</text> -->
+<view class="contentItems">
+  <image src="{{item.url}}" class="itemPhoto"></image>
+  <view class="itemInformation">
+    <text class="itemName">{{item.name}}</text>
+    <text class="itemPrice">{{item.price}}</text>
+    <text class="itemLocation">{{item.location}}</text>
+  </view>
+  <view class="itemInteraction">
+    <image src="../../static/icon/add.png" catchtap="handleFavor"/>
+  </view>
+</view>

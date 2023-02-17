@@ -1,0 +1,45 @@
+/* component/dishItem/dishItem.wxss */
+.contentItems {
+  width: 90%;
+  display: flex;
+  margin: 15rpx auto;
+  border-radius: 20rpx;
+  box-shadow: 2rpx 2rpx 8rpx #555;
+  padding: 15rpx;
+  margin-left: 30rpx;
+  margin-bottom: 35rpx;
+  background-image: linear-gradient(200deg,#ffffff,#dbe0e6);
+}
+.itemPhoto {
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+  box-shadow: 2rpx 2rpx 8rpx #999;
+}
+.itemInformation{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25rpx;
+  
+}
+.itemInformation text {
+  margin: 10rpx;
+}
+.itemName {
+  font-weight: bolder;
+  float: left;
+  font-size: 35rpx;
+}
+.itemInteraction {
+  float: left;
+  display: flex;
+  padding-left: 60rpx;
+  padding-top: 60rpx;
+}
+
+.itemInteraction image{
+  height: 80rpx;
+  width: 80rpx;
+}

@@ -1,0 +1,22 @@
+<!--pages/rank/rank.wxml-->
+<view class="rankContainer">
+  <text>你来自的地区是</text>
+  <text class="location">{{loc}}</text>
+  <view class="champion">
+  <text>你们最喜欢的菜品是</text>
+  <view class="item">
+    <text>{{champion}}</text>
+    <image src="../../static/icon/smile.png"/>
+  </view>
+  
+  </view>
+  <view class="loser">
+  <text>你们最讨厌的菜品是</text>
+  <view class="item">
+    {{loser}}
+    <image src="../../static/icon/sad.png"/>
+  </view>
+  
+  </view>
+</view>
+

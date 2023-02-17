@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "zhuanpan":"../../component/zhuanpan/zhuanpan"
+  },
+  "navigationStyle": "custom" 
+
+ 
+}

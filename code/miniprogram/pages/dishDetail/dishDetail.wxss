@@ -1,0 +1,102 @@
+/* pages/dishDetail/dishDetail.wxss */
+page{
+  background-color: rgb(240, 240, 240);
+}
+
+.headPicture {
+  margin-top: 50rpx;
+  height: 400rpx;
+  width: 100%;
+  
+}
+
+.headPicture image {
+  width: 90%;
+  height: 100%;
+  margin-left: 40rpx;
+  box-shadow: 2rpx 2rpx 8rpx #555;
+  border-radius: 15rpx;
+}
+
+
+.remarkTitle {
+  width: 100%;
+  padding: 20rpx 20rpx;
+  margin-top: -20rpx;
+}
+
+.remarkTitle image {
+  float: right;
+  padding-right: 50rpx;
+  height: 50rpx;
+  width: 50rpx;
+  
+}
+
+.detailInformation {
+  margin: 20rpx 50rpx;
+  color: #444;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 37rpx;
+  margin-bottom: 20rpx;
+  margin-top: 10rpx;
+}
+
+.detailIntroduction {
+  display: flex;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  margin-left: 120rpx;
+ 
+}
+
+.stars image{
+  width: 42rpx;
+  height: 42rpx;
+  
+}
+
+.middle {
+  display: flex;
+  
+}
+.fenge{
+  padding-bottom:20rpx;
+  padding-top: 20rpx;
+}
+.information {
+  display: flex;
+}
+.location {
+  margin-left: 30rpx;
+}
+
+.remarkItem {
+  background-image: linear-gradient(200deg,#fcfbe6,#faf6c8);
+  box-shadow: 2rpx 2rpx 8rpx #999;
+  padding: 20rpx;
+  margin: 20rpx 0;
+  border-radius: 15rpx;
+}
+
+.average_star {
+  margin-left: 40rpx;
+}
+.tip {
+  font-size: 20rpx;
+}
+.remarkInformation{
+
+  margin-left: 150rpx;
+}
+.average {
+  font-weight: bolder;
+  text-align: center;
+  font-size: larger;
+}

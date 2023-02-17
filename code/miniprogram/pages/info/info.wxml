@@ -1,0 +1,23 @@
+<!--pages/info/info.wxml-->
+<!-- <text>pages/info/info.wxml</text> -->
+<view class="infoContainer">
+  <view class="infoTitle">
+    <text>请选择你来自哪里</text>
+  </view>
+  <radio-group bindchange="handleLocation" class="form">
+    <radio value="华东" checked="true">
+      <label for="华东">华东</label>
+    </radio>
+    <radio value="华南">
+      <label for="华南">华南</label>
+    </radio>
+    <radio value="华北">
+      <label for="华北">华北</label>
+    </radio>
+    <radio value="华西">
+      <label for="华西">华西</label>
+    </radio>
+  </radio-group>
+  <!-- <button bindtap="handInInfo" class="handIn">确认</button> -->
+  <image src="../../static/icon/ok.png" bindtap="handInInfo"/>
+</view>

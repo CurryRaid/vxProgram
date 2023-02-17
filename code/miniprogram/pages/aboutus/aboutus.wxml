@@ -1,0 +1,15 @@
+<!--pages/aboutus/aboutus.wxml-->
+<view class="usContainer">
+  <view class="creator">
+    创作者
+  </view>
+  <view class="creator">
+    张亦弛
+  </view>
+  <view class="creator">
+    顾岩
+  </view>
+  <view class="creator">
+    叶时妤
+  </view>
+</view>

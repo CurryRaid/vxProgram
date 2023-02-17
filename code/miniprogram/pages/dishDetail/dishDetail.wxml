@@ -1,0 +1,63 @@
+<!--pages/dishDetail/dishDetail.wxml-->
+<!-- <text>pages/dishDetail/dishDetail.wxml</text> -->
+<view class="detailContainer">
+  <view class="headPicture">
+    <image src="{{item.url}}" />
+  </view>
+  
+  <view class="detailInformation">
+    <view class="detailIntroduction">
+    <view class="middle">
+      <view>
+        <view class="title">
+        {{item.name}}
+        </view>
+        <view class="information">
+          {{item.price}}
+          <view class="location">
+            {{item.location}}
+          </view>
+        </view>
+      </view>
+      
+      <view class="stars">
+        <view class="without-star">
+          <image src="{{star>0?'../../static/icon/full_star.png':'../../static/icon/empty_star.png'}}" bindtap="star1"/>
+          <image src="{{star>1?'../../static/icon/full_star.png':'../../static/icon/empty_star.png'}}" bindtap="star2"/>
+          <image src="{{star>2?'../../static/icon/full_star.png':'../../static/icon/empty_star.png'}}" bindtap="star3"/>
+          <image src="{{star>3?'../../static/icon/full_star.png':'../../static/icon/empty_star.png'}}" bindtap="star4"/>
+          <image src="{{star>4?'../../static/icon/full_star.png':'../../static/icon/empty_star.png'}}" bindtap="star5"/>
+        </view>
+        <view wx:if="{{if_star}}" class="average_star">
+          <view class="average">
+            {{average_star}}
+          </view>
+        <view class="tip">
+          平均分
+        </view>
+        </view>
+      </view>
+      
+    </view>
+  </view>
+  <view class="remark">
+    <view class="fenge">
+    ----------------------------------------
+    </view>
+    <view class="remarkTitle">
+      菜品评价
+      <image src="../../static/icon/addcomment.png" bindtap="addComment" data-id='{{item._id}}'/>
+    </view>
+    <view class="remarkDetail" wx:for="{{comment}}" wx:for-item="item">
+      <view class="remarkItem">
+        <view class="remarkContent">
+        {{item.content}}
+        </view>
+        <view class="remarkInformation">
+          —— {{item.author}}    {{item.time[16]}}{{item.time[17]}}{{item.time[18]}}{{item.time[19]}}{{item.time[20]}}
+        </view>
+      </view>
+    </view>
+    </view>
+  </view>
+</view>

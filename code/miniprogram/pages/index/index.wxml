@@ -1,0 +1,35 @@
+<!--pages/index/index.wxml-->
+<!-- <text>pages/index/index.wxml</text> -->
+<view class="indexContainer">
+  <view class="header">
+    <!-- 你是否在为下一顿吃什么而感到苦恼？ -->
+  </view>
+  <view class="navigationBar0">
+    <navigator url="/pages/menu/menu?type={{item}}" wx:for="{{tags0}}" wx:for-item="item">
+      <view class="navItem0" style='color:white;letter-spacing:10px;'>{{item}}</view>
+    </navigator>
+  </view>
+  <view class="navigationBar1">
+    <navigator url="/pages/menu/menu?type={{item}}" wx:for="{{tags1}}" wx:for-item="item">
+      <view class="navItem1" style='color:white;letter-spacing:10px'>{{item}}</view>
+    </navigator>
+  </view>
+  <view class="mainContent">
+    <view class="contentTitle">—— 热门菜品 ——</view>
+    <view wx:for="{{menulist}}" wx:for-item="item">
+      <navigator url="../dishDetail/dishDetail?dishName={{item.name}}">
+        <dishItem item="{{item}}"/>
+      </navigator>
+    </view>
+  </view>
+  <view class="bottom">—— 已经到底啦 ——</view>
+  <!-- <view class="search">
+    <view bindtap="searchDish" hover-class="none">
+      <input focus="true" placeholder="输入你想搜索的菜品" bindinput="getValue"/>
+        <view class="icon">
+          <image src=""/>
+        </view>
+      
+    </view>
+  </view> -->
+</view>

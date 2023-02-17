@@ -1,0 +1,23 @@
+<!--pages/addComment/addComment.wxml-->
+<!-- <text>pages/addComment/addComment.wxml</text> -->
+<view class="addCommentContainer">
+  <view class="title">
+  <view>
+    <image src="../../static/icon/pen.png"/>
+  </view>
+    <view>
+      <text>有什么想评价的吗</text>
+    </view>
+  </view>
+  <view class='writeComment'>
+    <form bindsubmit="newcomment">
+      <textarea placeholder="请输入您的评价..." name="textarea"/>
+      <view class="iteraction">
+        <view class="nav">
+          <!-- <image src="../../static/icon/ok.png" bind-type="submit" /> -->
+          <button class="prev" size="large" form-type="submit"> 提交 </button>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>

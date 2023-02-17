@@ -1,0 +1,21 @@
+/* pages/aboutus/aboutus.wxss */
+page {
+  font-weight: bolder;
+  font-size: 40rpx;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(240,240,240);
+}
+.creator {
+  text-align: center;
+  margin: 50rpx 0;
+}
+
+.usContainer {
+  box-shadow: 2rpx 2rpx 8rpx #555;
+  margin-top: 200rpx;
+  /* border: 1rpx solid; */
+  width: 60%;
+  margin-left: 150rpx;
+  padding: 50rpx 0;
+}

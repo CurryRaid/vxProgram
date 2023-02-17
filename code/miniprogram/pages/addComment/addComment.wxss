@@ -1,0 +1,30 @@
+/* pages/addComment/addComment.wxss */
+page {
+ background-color: rgb(240,240,240);
+}
+.addCommentContainer {
+  margin: 200rpx auto;
+  width: 90%;
+  
+}
+
+.title {
+  text-align: center;
+  display: flex;
+}
+
+image {
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.writeComment {
+  box-shadow: 2rpx 2rpx 8rpx #999;
+  background-image: linear-gradient(200deg,#fcfbe6,#f7f1b3);
+  padding: 30rpx;
+  margin-top: 10rpx;
+}
+
+.nav {
+  text-align: center;
+}

@@ -1,0 +1,37 @@
+/* pages/menu/menu.wxss */
+.contentItems {
+  width: 90%;
+  display: flex;
+  margin: 10rpx auto;
+  border: solid 1px;
+  padding: 10rpx;
+}
+page{
+  background-color: rgb(240,240,240);
+}
+.itemPhoto {
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+}
+.itemInformation{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.itemInteraction {
+  float: left;
+  display: flex;
+  padding-left: 40rpx;
+  padding-top: 80rpx;
+}
+
+.itemInteraction image{
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.menuTitle {
+  text-align: center;
+}
